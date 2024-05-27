@@ -1,9 +1,7 @@
 "use client";
 
-import '../app/globals.css';
-
-import React from 'react';
-import Login from './login/page';
+import React from "react";
+import UserRegistrationView from "../Views/UserRegistration/UserRegistrationView";
 
 const Header: React.FC = () => {
     return (
@@ -12,23 +10,19 @@ const Header: React.FC = () => {
             <h1 className="text-white text-4xl font-bold">LicencIA</h1>
             <h1 className="text-white text-md font-bold ml-4">Prefeitura de lugar nenhum</h1>
             </div>
-
-            <text className='font-bold text-sm'>Sou colaborador</text>
         </header>
     );
 };
 
-// App.tsx
-const App: React.FC = () => {
+const Registration: React.FC = () => {
     return (
         <div className="bg-LicenciaLightGreen h-screen">
             <Header />
             <div className="flex items-center justify-center">
-                <Login />
+            <UserRegistrationView />
             </div>
         </div>
     );
 };
 
-export default App;
-
+export default Registration;

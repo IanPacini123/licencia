@@ -7,12 +7,10 @@ import GreenButton from '../GeneralComponents/GreenButton';
 const UserRegistationView: React.FC = () => {
     return (
         <div className="bg-white flex flex-col items-center rounded-2xl justify-center p-8 m-20">
-            <text className='text-black text-2xl font-bold mb-20'>Registre-se como empreendedor</text>
-            
             <div className='flex items-start justify-between w-full'>
-                <GreenButton label={"Voltar"}/>
-                
-                <div/>
+            <GreenButton label={"Voltar"}/>
+            <text className='text-black text-2xl font-bold mb-20'>Registre-se como empreendedor</text>
+            <GreenButton label={"Voltar"} isTransparent={true} />
             </div>
             <div className='items-start w-full'>
                 <div className='flex mb-12'>

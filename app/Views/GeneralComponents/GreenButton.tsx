@@ -1,10 +1,14 @@
 import React from "react";
 
-const GreenButton: React.FC<{ label: String, onClick: ()=> void }> = ({label, onClick}) => {
+const GreenButton: React.FC<{ label: string, onClick: () => void, isTransparent?: boolean }> = ({ label, onClick, isTransparent = false }) => {
     return (
-        <button className="bg-LicenciaDarkGreen rounded-lg p-3 px-8"
-                onClick={onClick}>
-            <text className="text-xl">{label}</text>
+        <button
+            className={`rounded-lg p-3 px-8 ${
+                isTransparent ? "bg-transparent text-transparent" : "bg-LicenciaDarkGreen text-white"
+            }`}
+            onClick={onClick}
+        >
+            <span className="text-xl">{label}</span>
         </button>
     );
 };

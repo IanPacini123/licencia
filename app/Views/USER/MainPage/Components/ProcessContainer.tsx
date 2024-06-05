@@ -14,7 +14,7 @@ const ProcessContainer: React.FC<{processo: Process}> = ({processo}) => {
     }
 
     return (
-        <button className="bg-LicenciaLightBlue flex justify-between w-full p-8 rounded-3xl m-4 text-2xl font-bold text-LicenciaDarkGreen">
+        <button className="bg-LicenciaLightBlue flex justify-between w-full p-8 rounded-3xl my-2 text-2xl font-bold text-LicenciaDarkGreen">
                 <div className="flex">
                     <h1>{processo.licensa} -</h1>
                     <h1><span>&nbsp;</span>{processo.nome}<span>&nbsp;</span></h1>

@@ -36,7 +36,7 @@ const MainPageView = () => {
                         </div>
                     }
                     {processos.length != 0 && 
-                        <div style={{ maxHeight: '300px' }} className='overflow-y-auto overflow-x-hidden flex flex-col w-full m-8'>
+                        <div style={{ maxHeight: '300px' }} className='overflow-y-auto overflow-x-hidden flex flex-col w-full'>
                             {processos.map((processo, index) => (
                                 <ProcessContainer processo={processo}/>
                             ))}

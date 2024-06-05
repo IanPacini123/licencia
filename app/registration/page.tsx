@@ -1,7 +1,7 @@
 "use client";
 
 import React from "react";
-import UserRegistrationView from "../Views/UserRegistration/UserRegistrationView";
+import UserRegistrationView from "../Views/USER/UserRegistration/UserRegistrationView";
 
 const Header: React.FC = () => {
     return (

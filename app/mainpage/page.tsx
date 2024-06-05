@@ -1,11 +1,11 @@
 "use client";
 
 import React from "react";
-import LoginView from "../Views/USER/Login/LoginView";
+import MainPageView from "../Views/USER/MainPage/MainPageView";
 
 const Login: React.FC = () => {
     return (
-        <LoginView/>
+        <MainPageView/>
     );
 };
 

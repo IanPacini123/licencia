@@ -16,6 +16,7 @@ const config: Config = {
       colors:{
         "LicenciaDarkGreen": '#177D40',
         "LicenciaLightGreen": '#C5EFBE',
+        "LicenciaLightBlue": '#DDFFFB',
       },
     },
   },

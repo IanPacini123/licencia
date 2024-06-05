@@ -1,4 +1,4 @@
-"use client"; // Mark as a client component
+"use client";
 
 import React from "react";
 import { useRouter } from "next/navigation";
@@ -10,7 +10,7 @@ const LoginView: React.FC = () => {
     const router = useRouter();
 
     const handleLogin = () => {
-        // Add login logic here if needed
+        router.push('/mainpage');
     };
 
     const handleRegister = () => {

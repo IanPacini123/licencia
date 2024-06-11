@@ -1,6 +1,8 @@
 "use client";
 
-import React, { useState } from 'react';
+import React, { useState } from "react";
+import { useRouter } from "next/navigation";
+
 import { Process } from "../../../types/process";
 
 import UserHeader from '../GeneralComponents/UserHeader';
@@ -8,6 +10,7 @@ import ProcessContainer from './Components/ProcessContainer';
 
 
 const MainPageView = () => {
+    const router = useRouter();
     const [processos, setProcessos] = useState<Process[]>([]);
 
     const addProcess = () => {
@@ -18,6 +21,10 @@ const MainPageView = () => {
         }
         setProcessos([newProcess, ...processos]);
     }
+
+    const routeToNewProcess = () => {
+        router.push('/novo_processo');
+    };
 
 
     return (
@@ -37,12 +44,12 @@ const MainPageView = () => {
                     }
                     {processos.length != 0 && 
                         <div style={{ maxHeight: '300px' }} className='overflow-y-auto overflow-x-hidden flex flex-col w-full'>
-                            {processos.map((processo, index) => (
-                                <ProcessContainer processo={processo}/>
+                            {processos.map((processo: Process, index: number) => (
+                                <ProcessContainer processo={processo} onClick={() => {}}/>
                             ))}
                         </div>
                     }
-                    <ProcessContainer processo={null}/>
+                    <ProcessContainer onClick={routeToNewProcess}/>
                     <button onClick={addProcess}>Teste</button>
                 </div>
             </div>

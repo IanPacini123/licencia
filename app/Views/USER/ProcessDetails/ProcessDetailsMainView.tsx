@@ -17,7 +17,7 @@ const ProcessDetailsMainView: React.FC = () => {
             <div className='flex flex-col items-center justify-center mt-[80px]'>
                 <GreenButton label="Texto" onClick={() => {}}/>
 
-                <h1 className='font-bold text-3xl text-red-700'>Texto massa</h1>
+                <h1 className='font-bold text-3xl text-red-700'>Texto massa!</h1>
 
             </div>
 
